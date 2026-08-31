@@ -10,6 +10,14 @@ fif_project/
 │   ├── raw/
 │   │   └── Turan_oyun günü sorğusu.xlsx      # Xam Google Forms/Excel məlumatı
 │   └── processed/
+│       ├── cleaned_survey_data.csv           # Tam təmizlənmiş əsas dataset
+│       ├── dashboard_survey_data.csv         # + region_bucket, yas_qrupu, ticket_channel sütunları
+│       ├── reyting_long.csv                  # 10 reytinq sütunu "long" formatda (dashboard üçün)
+│       ├── correlation_matrix.csv            # Reytinqlər arası korrelyasiya (long format)
+│       ├── sponsor_exploded.csv              # Sponsor adları tək-tək sətirlərə açılmış
+│       ├── problems_neg_long.csv             # "Geri qayıtmıram" deyənlərin problemləri
+│       ├── spend_data.csv                    # Xərcləmə davranışı seqmentləri üçün
+│       └── geo_data.csv                      # Coğrafiya/nəqliyyat analiz üçün
 ├── notebooks/
 │   ├── 01_data_cleaning.ipynb                # Xam datanın təmizlənməsi
 │   └── 02_eda.ipynb                          # Kəşfiyyat analizi + Insight & Solutions bölməsi
